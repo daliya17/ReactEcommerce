@@ -1,0 +1,8 @@
+.rating__star {
+    color: #e2e2e2;
+  }
+  
+  .rating__star--active {
+    color: #f1c557;
+  }
+  
