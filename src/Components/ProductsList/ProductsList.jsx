@@ -2,6 +2,7 @@ import { memo, useEffect, useState } from "react";
 import ProductCart from "../ProductCard";
 import "./ProductsList.css";
 import {Link} from "react-router-dom";
+import Categories from "../Categories/Categories";
 // const products = [
 //   {
 //     id: 1,
@@ -77,6 +78,7 @@ function ProductList() {
     return (
       <>
       <Link to="/cart">cart</Link>
+      <Categories/>
       <div className="products" >
         {allProducts.map(
           function (product) {
