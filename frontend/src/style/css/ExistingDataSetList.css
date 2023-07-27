@@ -1,0 +1,13 @@
+#ag-grid-table__search {
+    background-color: rgb(255, 255, 255);
+    height: 90%;
+    width: 17%;
+}
+
+.margin-bottom {
+    margin-bottom: 0.22rem;
+}
+
+.ag-grid-table {
+    height: 92% !important;
+}

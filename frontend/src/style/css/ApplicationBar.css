@@ -1,0 +1,24 @@
+#app__title {
+    font-size: 1.25rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 550;
+    line-height: 1.6;
+    letter-spacing: 0.0065em;
+    color: white;
+    margin-right: 5rem;
+}
+
+#app__bar {
+    height: 3.5rem;
+    background-color: #5B3977;
+}
+
+#app__bar__items {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    color: rgb(235, 235, 235);
+    text-transform: uppercase;
+    margin-left: 25px;
+    font-weight: 650;
+    font-size: 0.85rem;
+
+}

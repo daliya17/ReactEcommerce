@@ -1,0 +1,33 @@
+#page-header__title {
+    font-size: 1.5rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.334;
+    letter-spacing: 0em;
+    flex: '0 0 auto',
+}
+
+.page-header__items {
+    height: 10%;
+}
+
+.page-header__divider {
+    flex: '1 1 0%',
+}
+
+.page-header__actions {
+    flex: '0 0 auto',
+}
+
+.page-header__link {
+    font-size: 14px;
+}
+
+.page-header__breadcrumps {
+    margin: 10px 15px 0px 25px;
+}
+
+.page-header__toolbar {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,17 @@
+.stepper-container {
+    height: 14%;
+    padding-top: 0.14rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.fe_u_padding--low {
+    height: 67%;
+}
+
+.btn--next {
+    display: flex;
+    justify-content: right;
+    padding: 0.1rem 2rem;
+}

@@ -1,0 +1,84 @@
+.regression-page {
+    height: 100%;
+}
+
+.page-header {
+    height: 10%;
+}
+
+#btn--refresh {
+    padding: 0.3rem;
+    margin-right: 0.3rem;
+    cursor: pointer !important;
+    font-size: 2rem;
+    border-radius: 100%;
+    color: #ff19a1;
+}
+
+#btn--refresh:hover {
+    color: #b319ff;
+
+}
+
+
+.ag-grid-table {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+#ag-grid-table__container {
+    font-family: 'Lato', sans-serif;
+    margin: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.ag-grid-table {
+    height: 100%;
+    width: 100%;
+}
+
+#btn--export-csv {
+    font-size: 1.5rem;
+    color: green;
+}
+
+#ag-grid-table__search {
+    height: 70%;
+    width: 14%;
+    border: none;
+    border-bottom: 2px solid rgb(165, 165, 165);
+    outline-color: rgb(165, 165, 165);
+    /* outline-style: inset; */
+}
+
+.ag-grid-table__items {
+    /* height: 2%; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 0.7rem;
+}
+
+.pagination-btn p {
+    display: flex;
+    align-self: flex-end;
+}
+
+#btn-create-regression {
+    color: white;
+}
+
+.color--green {
+    color: green !important;
+}
+
+.color--violet {
+    color: #43364D !important;
+}
+
+.width-full {
+    width: 100%;
+}
+
+.height-full {
+    height: 100%;
+}

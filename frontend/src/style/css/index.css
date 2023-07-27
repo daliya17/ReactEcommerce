@@ -1,0 +1,86 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* overriding default class */
+.fe_c_loader__content {
+  height: 100%;
+  width: 100%;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.ag-root-wrapper {
+  /* border: dotted 1px;
+  border-color: var(--ag-border-color, #0062ff) !important; */
+}
+
+.ag-theme-material {
+  --ag-background-color: #f5f5f5;
+  --ag-header-background-color: #D6CDDD;
+  --ag-selected-row-background-color: rgba(32, 32, 32, 0.12549019607843137);
+  --ag-row-hover-color: rgb(255, 255, 255);
+  --ag-odd-row-background-color: rgba(6, 6, 6, 0.023529411764705882);
+}
+
+
+.fe_c_show-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.fe_c_show-hide {
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+#forge-table__header {
+  border: 0;
+}
+
+#forge-table__header th {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding: 0px 15px;
+}
+
+#data-set-table {
+  width: 80%;
+  height: 90%;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5F5F5F;
+  border-radius: 5px;
+}
