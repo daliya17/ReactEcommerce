@@ -1,0 +1,65 @@
+{
+  "name": "eob-payer-promotion-tool",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^3.9.4",
+    "@material-ui/icons": "^3.0.2",
+    "event-stream": "^4.0.1",
+    "keycode": "^2.2.0",
+    "moment": "^2.29.1",
+    "react": "^17.0.2",
+    "react-csv-reader": "^3.3.1",
+    "react-dom": "^17.0.2",
+    "react-json-tree": "^0.11.2",
+    "react-redux": "^5.1.2",
+    "react-router-dom": "^5.2.0",
+    "react-select": "^4.3.1",
+    "redux": "^4.1.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "tv4": "^1.3.0"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "eslint --fix",
+      "prettier --single-quote --write",
+      "npm run test:staged"
+    ],
+    "src/**/*.{json,css,less}": [
+      "prettier --single-quote --write",
+      "npm run test:staged"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test:staged": "CI=true react-scripts test --findRelatedTests",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "husky": "4.2.3",
+    "lint-staged": "^11.1.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.3.2",
+    "react-scripts": "4.0.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

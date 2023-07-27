@@ -1,0 +1,271 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #f5f5f5;
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+#root main {
+  height: 100%;
+  overflow: hidden;
+}
+#root main .splitcontainer {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: row;
+  margin: 0px;
+  overflow: hidden;
+}
+#root main .splitcontainer .pane {
+  padding: 0px;
+}
+#root main .splitcontainer .leftpane {
+  overflow: auto;
+  height: 100%;
+  background: white;
+  position: relative;
+}
+#root main .splitcontainer .leftpane .sticky-top,
+#root main .splitcontainer .leftpane .sticky-bottom {
+  background: white;
+}
+#root main .splitcontainer .rightpane {
+  border-left: 1px solid #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+}
+#root main .splitcontainer .rightpane .tabcontainer {
+  flex-grow: 1;
+  overflow: auto;
+}
+#root main .headline {
+  margin: 20px 0px 0px 15px;
+}
+#root main .scrollable {
+  height: 100%;
+  overflow: auto;
+}
+#root main .scrollable .sticky-top,
+#root main .scrollable .sticky-bottom {
+  background: #f5f5f5;
+}
+#root main table td:first-child.min-padding,
+#root main table th:first-child.min-padding {
+  padding: 0px 0px 0px 15px;
+}
+#root main table td:last-child.min-padding,
+#root main table th:last-child.min-padding {
+  padding: 0px 15px 0px 0px;
+}
+#root main table.dense-padding td,
+#root main table.dense-padding th {
+  padding: 4px 12px 4px 18px;
+}
+#root main .closebutton {
+  position: absolute;
+  right: 0;
+}
+#root main .breadcrumb {
+  margin: 15px 0px 0px 20px;
+}
+#root main .breadcrumb aside {
+  color: #777777;
+}
+#root main .breadcrumb a {
+  color: #777777;
+}
+#root main .comparison-result {
+  margin: 0px 15px 20px 15px;
+}
+#root main .comparison-result * {
+  transition: none;
+}
+#root main .comparison-result .expandable {
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 1px 0px rgba(0, 0, 0, 0.24), 0px 1px 1px -1px rgba(0, 0, 0, 0.12);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+#root main .comparison-result .expandable:before {
+  transition: none;
+  background: none;
+}
+#root main .comparison-result .expandable.claim,
+#root main .comparison-result .expandable.batchException {
+  margin-left: 30px;
+}
+#root main .comparison-result .expandable.charge {
+  margin-left: 60px;
+}
+#root main .comparison-result .expandable .subheading {
+  text-transform: capitalize;
+}
+#root main .comparison-result .panel-summary {
+  width: 70px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 13px;
+}
+#root main .comparison-result .panel-summary:not(:nth-last-of-type(1)):not(:nth-last-of-type(2)):not(:nth-last-of-type(3)) {
+  color: #444444;
+}
+#root .margin {
+  margin: 20px;
+}
+#root a.link {
+  text-decoration: none;
+  color: inherit;
+}
+.sticky-top {
+  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 300;
+}
+.sticky-bottom {
+  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 300;
+  bottom: 0;
+}
+.inputnoborder:before {
+  border-bottom: none !important;
+}
+.inputnoborder:after {
+  border-bottom: none !important;
+}
+.evaluation-table,
+.diff-table {
+  border-collapse: collapse;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+.evaluation-table tr,
+.diff-table tr {
+  height: auto;
+}
+.evaluation-table tr th,
+.diff-table tr th,
+.evaluation-table tr td,
+.diff-table tr td {
+  padding: 9px 10px;
+  border: 1px solid #c0c0c0;
+}
+.evaluation-table tr th.nopadding,
+.diff-table tr th.nopadding,
+.evaluation-table tr td.nopadding,
+.diff-table tr td.nopadding {
+  padding: 0px;
+}
+.evaluation-table tr th.original-status-cell,
+.diff-table tr th.original-status-cell,
+.evaluation-table tr td.original-status-cell,
+.diff-table tr td.original-status-cell {
+  border-right: none;
+  width: 8px;
+}
+.evaluation-table tr th.name-cell,
+.diff-table tr th.name-cell,
+.evaluation-table tr td.name-cell,
+.diff-table tr td.name-cell {
+  border-left: none;
+}
+.evaluation-table tr th.name-cell svg,
+.diff-table tr th.name-cell svg,
+.evaluation-table tr td.name-cell svg,
+.diff-table tr td.name-cell svg {
+  font-size: 18px;
+  float: right;
+  color: #777777;
+}
+.evaluation-table tr th.name-cell .add-rule,
+.diff-table tr th.name-cell .add-rule,
+.evaluation-table tr td.name-cell .add-rule,
+.diff-table tr td.name-cell .add-rule {
+  cursor: pointer;
+  visibility: hidden;
+}
+.evaluation-table tr:hover td.name-cell .add-rule,
+.diff-table tr:hover td.name-cell .add-rule {
+  visibility: visible;
+}
+.evaluation-table tr td,
+.diff-table tr td {
+  color: #444444;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.evaluation-table tr th,
+.diff-table tr th {
+  background-color: #eeeeee;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+table.no-border td,
+table.no-border th {
+  border-bottom: none;
+}
+.Select-control {
+  border: none;
+  border-bottom: 1px solid #888888;
+  border-radius: 0px;
+}
+.hidden {
+  visibility: hidden;
+}
+.newline {
+  display: block;
+}
+.margin {
+  margin: 20px;
+}
+.screen {
+  position: fixed;
+}
+.screen.open {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 310;
+}
+.json-viewer {
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  background: white;
+  padding: 10px;
+  overflow: auto;
+}
+.json-viewer > *:not(button) {
+  background-color: transparent !important;
+  font-family: Courier, monospace;
+}
+.json-viewer li {
+  margin: 7px 0px;
+}
+.json-viewer ul > li {
+  margin-left: 40px !important;
+}
+.json-viewer > ul > li {
+  margin-left: 0px !important;
+}
+.json-viewer button {
+  margin: 0px 10px;
+}
+.json-viewer div {
+  color: #aaaaaa !important;
+}

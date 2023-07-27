@@ -1,0 +1,14 @@
+[
+  {
+    "id": "TESTING",
+    "name": "Testing"
+  },
+  {
+    "id": "LAYOUT_PROCESSING",
+    "name": "Layout Processing"
+  },
+  {
+    "id": "PRODUCTION_TESTING",
+    "name": "Production Testing"
+  }
+]

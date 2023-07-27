@@ -1,0 +1,19 @@
+{
+  "appName": "EOB Payer Promotion",
+  "payerBatchesTable": "payerpaymentbatches",
+  "regressionsTable": "regressions",
+  "payersTable": "payers",
+  "regressionPayersTable": "regressionpayers",
+  "regressionPayerBatchesTable": "regressionpayerbatches",
+  "payerRegressionsTable": "payerregressions",
+  "diffRulesTable": "diffrules",
+  "regressionLevelsReportTable": "regressionlevelsreport",
+  "regressionFieldsReportTable": "regressionfieldsreport",
+  "regressionRulesFiredTable": "regressionrulesfired",
+  "regressionDrilldownTable": "regressionreportdrilldown",
+  "regressionScoreBucketTable": "regressionscorebucket",
+  "diffCategoriesTable": "diffcategories",
+  "regressionDiffsTable": "regressiondiffs",
+  "regressionStatusTable": "regressionstatustable",
+  "diffCategorizationRulesTable": "diffcategorizationrules"
+}

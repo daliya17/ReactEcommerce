@@ -1,0 +1,7 @@
+{
+  "extends": ["react-app", "eslint:recommended"],
+  "rules": {
+    "react/prop-types": 1,
+    "import/no-anonymous-default-export": 0
+  }
+}

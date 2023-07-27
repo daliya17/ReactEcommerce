@@ -1,0 +1,9 @@
+{
+    "git.ignoreLimitWarning": true,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "prettier.tabWidth": 2,
+    "sonarqube-inject.enableLinter": false,
+    "prettier.singleQuote": true,
+    "prettier.eslintIntegration": true
+}

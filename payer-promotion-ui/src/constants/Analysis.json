@@ -1,0 +1,18 @@
+[
+  {
+    "id": "ORBOGRAPHISSUE",
+    "name": "Orbograph Issue"
+  },
+  {
+    "id": "COMPLETED",
+    "name": "Completed"
+  },
+  {
+    "id": "NEEDANALYSIS",
+    "name": "Need Analysis"
+  },
+  {
+    "id": "TECHNICALISSUE",
+    "name": "Technical Issue"
+  }
+]
