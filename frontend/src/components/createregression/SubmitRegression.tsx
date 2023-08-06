@@ -1,6 +1,7 @@
 import React, { ReactElement, useEffect, useState } from "react";
 import { Checkbox, Form, FormField } from "@athena/forge";
 import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import {
     selectForm,
     selectNext,
@@ -32,6 +33,7 @@ function SubmitRegression(): ReactElement {
     const regressionId: string = useSelector(selectRegressionId);
     const disableForm: boolean = useSelector(selectForm);
     const [errors, setErrors] = useState<any>({});
+    const navigate = useNavigate();
 
     useEffect(() => {
         if (disableForm && !regressionId)
@@ -54,8 +56,8 @@ function SubmitRegression(): ReactElement {
             await navigator.clipboard.writeText(text);
 
         setTimeout(() => {
-            window.location.reload();
-        }, 3000);
+            navigate('/');
+        }, 4000);
     }
 
     function submitRegression(event: React.FormEvent<HTMLInputElement>): void {

@@ -34,3 +34,9 @@
   height: 100%;
   width: 100%;
 }
+
+.comparator-field-list .fe_c_form-field__input-slot {
+  max-height: 20rem;
+  min-height: 0rem !important;
+  overflow-y: auto;
+}

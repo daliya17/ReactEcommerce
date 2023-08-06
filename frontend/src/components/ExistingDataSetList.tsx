@@ -44,14 +44,14 @@ const ExistingDataSetList = () => {
     gridRef.current?.api?.hideOverlay();
   }
 
-  const columnDefs = useMemo<any>(() => {
+  const columnDefs: ColDef[] = useMemo<ColDef[]>(() => {
     return [
       {
         field: 'id',
-        checkboxSelection: true,
-        width: 50,
+        checkboxSelection: true, flex: 1
       },
-      { field: 'name' }
+      { field: 'name', flex: 1 },
+      { field: 'created', flex: 1 },
     ];
   }, []);
 

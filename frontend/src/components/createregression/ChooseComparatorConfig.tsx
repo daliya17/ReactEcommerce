@@ -93,6 +93,7 @@ function ChooseComparatorConfig(): ReactElement {
                         id="comparator-details"
                         labelText="Fields to compare"
                         inputAs={ReadOnlyInput}
+                        className="comparator-field-list"
                     >
                         {
                             configDetails.length > 0 && configDetails.map((str) => {
